@@ -8,10 +8,10 @@
    <style>
       .overflow{
       border: 1px solid red;
-      width: 400px;
-      height: 500px;
+      width: 200px;
+      height: 150px;
       display: -webkit-box;
-      -webkit-line-clamp: 27;
+      -webkit-line-clamp: 7;
       -webkit-box-orient: vertical;
       overflow: hidden;
    }
@@ -35,9 +35,26 @@
     bottom:0;
     right:0;
 }
+
+.ellip-text{
+   width: 200px;
+   border: 1px solid red;
+   cursor: pointer;
+   margin-bottom: 10px;
+
+}
+
+.short-text{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
    </style>
 </head>
 <body>
+   <div class="ellip-text">
+      <p class="short-text" title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque provident eaque nemo, doloribus autem!">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque provident eaque nemo, doloribus autem!</p>
+   </div>
    <div class="new">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est et nesciunt, ex voluptates veritatis cumque sunt ullam explicabo voluptas voluptatum qui cupiditate, suscipit eaque, blanditiis a nostrum! Modi sunt vero repellendus impedit ut aliquid, porro excepturi alias blanditiis et sequi incidunt corrupti at, consequuntur eligendi est! Odit cumque eveniet voluptatem libero iste! Vel, fuga laboriosam repudiandae atque ullam numquam debitis facere est deserunt itaque in natus id sapiente nulla consequuntur veritatis praesentium fugiat ut vero ipsam repellat maxime. Eveniet, obcaecati animi velit aspernatur eligendi natus similique tenetur quidem corporis necessitatibus omnis dicta alias? Aliquid esse eos nobis commodi vero deserunt!</p>
    </div>
